@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { coy, atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 import "./styles.css";
 
 function App() {
   const [jsonInput, setJsonInput] = useState("");
   const [jsonOutput, setJsonOutput] = useState("");
   const [error, setError] = useState("");
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   const handleInputChange = (e) => {
     setJsonInput(e.target.value);
@@ -34,10 +33,6 @@ function App() {
     }
   };
 
-  const toggleTheme = () => {
-    setIsDarkTheme(!isDarkTheme);
-  };
-
   return (
     <div className="app-container">
       <Header />
@@ -55,7 +50,7 @@ function App() {
         <div className="json-box">
           <SyntaxHighlighter 
             language="json" 
-            style={isDarkTheme ? atomDark : coy}
+            style={coy}
             showLineNumbers={true}
             customStyle={{
               margin: 0,
@@ -75,9 +70,6 @@ function App() {
       <div className="button-container">
         <button className="format-button" onClick={formatJson}>
           Format JSON
-        </button>
-        <button className="theme-button" onClick={toggleTheme}>
-          {isDarkTheme ? 'Light Theme' : 'Dark Theme'}
         </button>
       </div>
 
