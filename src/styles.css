@@ -48,7 +48,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
-    max-width: 1500px;
+    max-width: 2000px;
     margin: auto;
     padding: 5px;
 }
@@ -62,6 +62,13 @@
     overflow: hidden;
     background-color: var(--box-bg);
 }
+
+.json-box pre code {
+    white-space: pre-wrap !important;
+    word-break: break-all !important;
+    overflow-x: hidden !important;
+}
+
 
 /* Textarea Styling */
 .json-textarea {

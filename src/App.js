@@ -44,6 +44,11 @@ function App() {
             onChange={handleInputChange}
             placeholder="Enter unformatted JSON here..."
             value={jsonInput}
+            style={{
+              width: '100%',
+              height: '100%',
+              resize: 'none'
+            }}
           />
         </div>
 
@@ -52,6 +57,8 @@ function App() {
             language="json" 
             style={coy}
             showLineNumbers={true}
+            wrapLines={true}
+            // wrapLongLines={true}
             customStyle={{
               margin: 0,
               padding: '1rem',
