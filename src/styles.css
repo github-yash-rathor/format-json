@@ -1,18 +1,21 @@
 :root {
-    /* Choose one of the color combinations, for example: */
-    --primary: #2d3436;
-    --secondary: #636e72;
+    /* Slate Grey Theme (Default) */
+    --primary: #2c3e50;
+    --secondary: #34495e;
     --background: #f5f6fa;
-    --accent: #0984e3;
-    --light: #dfe6e9;
+    --accent: #1191ea;
+    --text: #ecf0f1;
+    --border: #ccc;
+    --box-bg: #ffffff;
+    --text-color: #333;
+    --placeholder: #999;
 }
-
 
 /* Overall App Styling */
 .app-container {
     min-height: 100vh;
-    background-color: #112b4e; /* Dark blue */
-    color: #ffffff;
+    background-color: var(--primary);
+    color: var(--text);
     text-align: center;
     padding: 20px;
 }
@@ -20,8 +23,8 @@
 /* Header */
 .app-header {
     text-align: center;
-    padding: 1rem 0;  /* Decrease vertical padding */
-    background-color: #172e55;
+    padding: 1rem 0;
+    background-color: var(--primary);
     margin-bottom: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -30,13 +33,13 @@
     margin: 0;
     font-size: 2.5rem;
     font-weight: 500;
-    color: #64FFDA;
+    color: var(--accent);
 }
 
 .app-header p {
     margin: 0.5rem 0 0;
     font-size: 1.1rem;
-    color: #b6bcd5;
+    color: var(--text);
 }
 
 /* JSON Container (Side by Side Layout) */
@@ -54,10 +57,10 @@
 .json-box {
     flex: 1;
     min-height: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     border-radius: 4px;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: var(--box-bg);
 }
 
 /* Textarea Styling */
@@ -70,8 +73,8 @@
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
     font-size: 14px;
     line-height: 1.5;
-    background-color: #ffffff;
-    color: #333;
+    background-color: var(--box-bg);
+    color: var(--text-color);
 }
 
 .json-textarea:focus {
@@ -79,42 +82,31 @@
 }
 
 .json-textarea::placeholder {
-    color: #999;
+    color: var(--placeholder);
 }
 
 /* Format Button */
 .button-container {
     display: flex;
-    gap: 1rem;
     justify-content: center;
     margin: 1rem 0;
 }
 
-.format-button, .theme-button {
+.format-button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.format-button {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.theme-button {
-    background-color: #2196F3;
-    color: white;
+    transition: all 0.2s ease;
+    background-color: var(--accent);
+    color: var(--primary);
+    font-weight: bold;
 }
 
 .format-button:hover {
-    background-color: #45a049;
-}
-
-.theme-button:hover {
-    background-color: #1976D2;
+    opacity: 0.9;
+    transform: translateY(-1px);
 }
 
 /* Error Message */
@@ -130,26 +122,7 @@ pre {
     padding: 1rem !important;
     height: 100% !important;
     overflow: auto !important;
-    background-color: #ffffff !important;
-}
-
-/* Dark theme specific styles */
-.dark-theme .json-box {
-    border-color: #444;
-    background-color: #282c34;
-}
-
-.dark-theme .json-textarea {
-    background-color: #282c34;
-    color: #abb2bf;
-}
-
-.dark-theme .json-textarea::placeholder {
-    color: #666;
-}
-
-.dark-theme pre {
-    background-color: #282c34 !important;
+    background-color: var(--box-bg) !important;
 }
 
 /* Responsive Design */
