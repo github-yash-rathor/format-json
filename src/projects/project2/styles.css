@@ -1,0 +1,35 @@
+.project-content {
+  max-width: 1600px;
+  margin: 0.5rem auto;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-details {
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-section {
+  margin-bottom: 2rem;
+}
+
+.project-section:last-child {
+  margin-bottom: 0;
+}
+
+.project-section h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.project-section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.project-section li {
+  margin-bottom: 0.5rem;
+} 
