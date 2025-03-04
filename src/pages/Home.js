@@ -14,7 +14,7 @@ const Home = () => {
             <Link to="/json-formatter" className="project-button">
               JSON Formatter
             </Link>
-            <Link to="/project2" className="project-button">
+            <Link to="/removeUnwantedCharacters" className="project-button">
               Project 2
             </Link>
             <Link to="/project3" className="project-button">

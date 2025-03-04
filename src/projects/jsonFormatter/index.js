@@ -25,7 +25,10 @@ const JsonFormatter = () => {
     try {
       const parsedJson = JSON.parse(jsonInput);
       const formattedJson = JSON.stringify(parsedJson, null, 2);
-      setJsonOutput(formattedJson);
+      const formattedText = formattedJson
+          .replace(/\\n/g, '\n')
+          .replace(/\\t/g, '\t');
+      setJsonOutput(formattedText);
       setError("");
     } catch (err) {
       setError("Invalid JSON format");
