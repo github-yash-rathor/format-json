@@ -7,7 +7,7 @@ const Header = () => {
     <header className="header">
       <div className="header-content">
         <Link to="/" className="header-title">
-          <h1>My Portfolio</h1>
+          <h1>My Projects</h1>
         </Link>
         <nav>
           <ul>

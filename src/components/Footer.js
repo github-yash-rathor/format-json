@@ -5,7 +5,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <div className="footer-left">
+          <p>Made with ❤️ by Yash Rathor</p>
+        </div>
+        <div className="footer-right">
+          <p>&copy; 2025 All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );
