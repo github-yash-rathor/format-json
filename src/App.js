@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import JsonFormatter from './projects/jsonFormatter';
-import Project2 from './projects/project2';
 import RemoveUnwantedCharacters from './projects/removeUnwantedCharacter';
 import Project3 from './projects/project3';
 import './App.css';
