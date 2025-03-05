@@ -46,14 +46,16 @@ const RemoveUnwantedCharacter = () => {
                         <div className="json-container">
                             <div className="json-box">
                                 <textarea
-                                    className="json-textarea"
+                                    className="json-textarea scrollable"
                                     onChange={handleInputChange}
                                     placeholder="Enter text with \n for newlines and \t for tabs..."
                                     value={jsonInput}
                                     style={{
                                         width: '100%',
                                         height: '100%',
-                                        resize: 'none'
+                                        resize: 'none',
+                                        overflowY: 'auto',
+                                        overflowX: 'auto'
                                     }}
                                 />
                             </div>
@@ -71,8 +73,8 @@ const RemoveUnwantedCharacter = () => {
                                         borderRadius: '4px',
                                         height: '100%',
                                         overflow: 'auto',
-                                        whiteSpace: 'pre-wrap',
-                                        wordBreak: 'break-word'
+                                        whiteSpace: 'pre',
+                                        wordBreak: 'keep-all'
                                     }}
                                 >
                                     {jsonOutput || '// Formatted text will appear here'}
