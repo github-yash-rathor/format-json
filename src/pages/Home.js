@@ -15,7 +15,7 @@ const Home = () => {
               JSON Formatter
             </Link>
             <Link to="/removeUnwantedCharacters" className="project-button">
-              Project 2
+              Remove unwanted characters
             </Link>
             <Link to="/project3" className="project-button">
               Project 3
