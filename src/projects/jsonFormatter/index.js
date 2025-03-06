@@ -68,12 +68,13 @@ const JsonFormatter = () => {
                   wrapLongLines={true}
                   customStyle={{
                     margin: 0,
-                    padding: '1rem',
+                    padding: '0.5rem',
                     borderRadius: '4px',
                     height: '100%',
                     overflow: 'auto',
                     whiteSpace: 'pre-wrap',
-                    wordBreak: 'break-word'
+                    wordBreak: 'break-word',
+                    'font-size':  '0.8rem',
                   }}
                 >
                   {jsonOutput || '// Formatted JSON will appear here'}
@@ -96,4 +97,4 @@ const JsonFormatter = () => {
   );
 };
 
-export default JsonFormatter; 
+export default JsonFormatter;
