@@ -52,9 +52,8 @@ const JsonFormatter = () => {
                   placeholder="Enter unformatted JSON here..."
                   value={jsonInput}
                   style={{
-                    width: '100%',
-                    height: '100%',
-                    resize: 'none'
+                    width: '94%',
+                    height: '90%'
                   }}
                 />
               </div>
